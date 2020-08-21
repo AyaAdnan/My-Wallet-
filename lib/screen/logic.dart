@@ -9,15 +9,19 @@ class LogicScreen extends StatelessWidget {
         preferredSize: Size.fromHeight(27.0),
         child: AppBar(
         centerTitle: true,
-        title: Text('My Wallet '),
+        title: Text('My Wallet ',
+          style:  TextStyle(
+              color: Colors.white,
+              fontSize: 25,
+            )
+        ),
+
        elevation: 0,
         backgroundColor:kPrimaryColor ,
         brightness: Brightness.dark,
         textTheme: TextTheme(
-          title: TextStyle(
-            color: Colors.white,
-            fontSize: 25,
-          )
+
+
         ),
 
       ),
@@ -103,7 +107,7 @@ class LogicScreen extends StatelessWidget {
 
                   margin: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
                   width: MediaQuery.of(context).size.width,
-                  height: 173,
+
                   decoration: BoxDecoration(
 
                     borderRadius: BorderRadius.circular(16),
